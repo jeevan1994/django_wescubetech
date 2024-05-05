@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+ <form action = "{% url 'contact_us' %} " method = "POST">
+     {% csrf_token %}
+     {{form}}
+<!--    <label for="your_name">Your name: </label>-->
+<!--    <input id="your_name" type="No" name="no1" value="{{ current_name }}">-->
+<!--     <input id="your_name" type="No" name="no2" value="{{ current_name }}">-->
+    <input type="submit" value="OK">
+</form>
+</body>
+</html>
